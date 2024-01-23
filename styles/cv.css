@@ -1,0 +1,12 @@
+section{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.experience h2{
+    font-size: 1.2rem;
+    padding: 20px 0 15px;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+}
