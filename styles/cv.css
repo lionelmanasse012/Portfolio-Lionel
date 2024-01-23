@@ -1,12 +1,56 @@
 section{
     max-width: 1100px;
     margin: 0 auto;
+    padding: 40px 40px 0;
 }
-.experience h2{
-    font-size: 1.2rem;
+section p{
+    font-size: .85rem;
+}
+section li{
+    font-size: .85rem;
+    list-style: inside;
+    margin-left: 15px;
+}
+.experience .cv{
+    font-size: 1.1rem;
     padding: 20px 0 15px;
+    line-height: 25px;
+}
+.experience .title{
+    font-size: 1.1rem;
+    padding: 20px 0 30px;
+    line-height: 25px;
+}
+.text{
+    line-height: 30px;
+    padding: 0 0 10px;
+    width: 90%;
+}
+.list{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.list li{
+    line-height: 30px;
 }
 .block{
     display: flex;
     justify-content: space-between;
+    line-height: 25px;
 }
+.left{
+    margin-bottom: 25px;
+}
+.left h3{
+    font-size: .9rem;
+}
+
+.etude{
+    border-bottom: 1px solid #dddcdc;
+}
+/* .block h3{
+    font-size: .9rem;
+}
+.left p{
+    font-size:.9rem;
+} */
