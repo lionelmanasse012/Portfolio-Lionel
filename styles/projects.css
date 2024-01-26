@@ -6,7 +6,7 @@
 #project h2{
     margin-bottom: 50px;
 }
-.project-item{
+/* .project-item{
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -46,13 +46,13 @@
 }
 .project-description i:hover{
     transform: scale(1.1);
-}
-/* .project-items{
+} */
+.project-items{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-} */
-/* .project-items .left{
+}
+.project-items .left{
     width: 35%;
     line-height: 30px;
 }
@@ -71,4 +71,4 @@
     width: 100%;
     background: #e8e7e7;
     padding: 15px;
-} */
+}
