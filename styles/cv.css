@@ -57,6 +57,11 @@ section li{
 .competence-container li{
     font-size: .9rem;
 }
+.competence-container .list-title{
+    list-style: none;
+    font-size: 1rem;
+    margin: 0;
+}
 
 .etude{
     border-top: 1px solid #dddcdc;
