@@ -7,16 +7,45 @@
     margin-bottom: 50px;
 }
 .project-item{
-    display: flex;
-    justify-content: center;
-    background: #e8e7e7;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.container{
+    background: #e8e7e75b;
+    border: 1px solid #0000003c;
     border-radius: 10px;
     max-width: 300px;
-    height: 350px;
+    transition: all .4s ease;
+}
+.container:hover{
+    transform: scale(1.1);
+}
+.project-img{
+    border-radius: 15px;
 }
 .project-item img{
-    width: 90%;
-    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+}
+.project-item .text{
+    font-size: .8rem;
+    padding: 15px;
+}
+.project-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.project-description i{
+    font-size: 2rem;
+    transition: all .4s ease;
+}
+.project-description i:hover{
+    transform: scale(1.1);
 }
 /* .project-items{
     display: flex;
