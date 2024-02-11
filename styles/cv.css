@@ -36,35 +36,9 @@
 .cv__langue{
     border-bottom: none;
 }
-<<<<<<< HEAD
 .cv__item--title{
     list-style: none;
     margin: 0;
-=======
-.competence-container .list-title{
-    list-style: none;
-    font-size: 1rem;
-    margin: 0;
-}
-
-.etude{
-    border-top: 1px solid #dddcdc;
-    border-bottom: 1px solid #dddcdc;
-}
-.block,
-.text,
-.list{
-    margin-left: 20px;
-}
-.langue{
-    margin-bottom: 80px;
-    border-top: 1px solid #dddcdc;
-}
-.langue h3{
-    padding-bottom: 20px;
-}
-.langue li{
->>>>>>> ef523035cd0c5a38eb549fce2b1d736bcae40cd1
     font-weight: bold;
 }
 .cv__container--competence{
