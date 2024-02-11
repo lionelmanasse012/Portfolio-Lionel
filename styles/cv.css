@@ -1,79 +1,65 @@
-section{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 25px 40px 0;
+.cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0;
 }
-section p{
-    font-size: .85rem;
+.cv__container{
+    width: 80%;
 }
-section li{
-    font-size: .85rem;
-    list-style: inside;
-    margin-left: 15px;
-}
-.experience .cv{
+.cv__title--h2{
     font-size: 1.1rem;
-    padding: 20px 0 15px;
-    line-height: 25px;
+    padding: 10px 0;
 }
-.title{
-    font-size: 1.1rem;
-    padding: 20px 0 30px;
-    line-height: 25px;
+.cv__title--h3{
+    font-size: .9rem;
+    padding: 10px 0;
 }
-.text{
-    line-height: 30px;
-    padding: 0 0 10px;
-    width: 90%;
-}
-.list{
-    line-height: 30px;
-    margin-bottom: 25px;
-}
-.list li{
-    line-height: 30px;
-}
-.block{
+.cv__block{
     display: flex;
     justify-content: space-between;
-    line-height: 25px;
 }
-.left{
-    margin-bottom: 25px;
-}
-.left h3{
+.cv__annee,
+.cv__text,
+.cv__lieu,
+.cv__list{
     font-size: .9rem;
+    padding: 10px 0;
 }
-
-.competence-container{
-    display: flex;
-    margin: 0 25px 0;
-    font-size: .9rem;
+.cv__item{
+    margin: 0 30px;
+    list-style: disc;
 }
-.competence-container .list{
-    font-size: .9rem;
-    margin-right: 250px;
+.cv__section{
+    border-bottom: 1px solid var(--other__border--color);
 }
-.competence-container li{
-    font-size: .9rem;
+.cv__langue{
+    border-bottom: none;
 }
-
-.etude{
-    border-top: 1px solid #dddcdc;
-    border-bottom: 1px solid #dddcdc;
-}
-.block,
-.text,
-.list{
-    margin-left: 20px;
-}
-.langue{
-    margin-bottom: 80px;
-    border-top: 1px solid #dddcdc;
-}
-.langue h3{
-    padding-bottom: 20px;
-}
-.langue li{
+.cv__item--title{
+    list-style: none;
+    margin: 0;
     font-weight: bold;
+}
+.cv__container--competence{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 20px;
+}
+
+/* **************Responsive************** */
+@media screen and (max-width: 750px) {
+    .cv__title--h2{
+        font-size: 4vw;
+    }
+    .cv__title--h3{
+        font-size: 2vw;
+    }
+    .cv__annee,
+    .cv__text,
+    .cv__lieu,
+    .cv__list{
+        font-size: 2.2vw;
+    }
 }

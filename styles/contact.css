@@ -1,52 +1,96 @@
-a{
-    color: #000;
-}
-#contact{
+.contact{
     display: flex;
-    justify-content: space-around;
-    max-width: 1100px;
-    padding: 250px 0 300px;
-    margin: 0 auto;
+    justify-content: center;align-items: center;
+    height: 75vh;
 }
-.contact-left{
-    line-height: 25px;
+.contact__right{
+    width: 500px;
 }
-.contact-left h2{
+.contact__container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 80%;
+}
+.contact__title--h2{
     margin: 0 0 20px;
 }
-.contact-left p{
-    margin: 0 0 20px;
+.contact__title--h3{
+    margin: 0 0 10px;
+    font-size: 1rem;
 }
-.contact-right form{
+.contact__text{
+    margin: 0 0 10px;
+}
+.contact__form{
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: end;
-    grid-template-columns: 50% 50%;
-    gap: 20px;
+    gap: 15px;
 }
-form label{
+.contact__label{
     display: block;
-    margin-bottom: 10px;
+    padding: 0 0 10px;
 }
-input[type="text"], input[type="email"]{
-    padding: 8px;
-    width: 250px;
+.contact__input--text,
+.contact__textarea{
+    padding: 6px 10px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 3px;
+    width: 100%;
 }
-textarea{
-    padding: 8px;
+.contact__textarea{
+    display: flex;
     resize: none;
-    height: 150px;
-    width: 250px;
+    height: 100px;
 }
-input[type="submit"]{
-    background: #ffa600;
-    border: 1px solid #91671a;
+.contact__input--btn{
+    width: 100px;
+    height: 100px;
+    color: #000;
+    background: var(--snd__bg--color);
+    border: 1px solid var(--snd__border--color);
+    border-radius: 100%;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    transition: all .4s ease;
+    transition: all .3s ease;
 }
-input[type="submit"]:hover{
+.contact__input--btn:hover{
     transform: scale(.9);
+}
+
+/* **************Responsive************** */
+
+@media screen and (max-width:850px){
+    .contact{
+        height: auto;
+        margin: 50px 0;
+    }
+    .contact__form{
+        display: block;
+        margin: 30px 0 0;
+    }
+    .contact__right{
+        width: auto;
+    }
+    .contact__input--text,
+    .contact__textarea{
+        padding: 6px 10px;
+        font-size: 1rem;
+        outline: none;
+    }
+    .contact__input--btn{
+        margin: 30px 0 0;
+    }
+}
+@media screen and (max-width:600px){
+    
+    .contact__container{
+        flex-direction: column;
+    }
+    .contact__form{
+        display: grid;
+    }
 }

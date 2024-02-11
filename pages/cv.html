@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="../images/maPhoto.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -13,150 +14,166 @@
 </head>
 <body>
 
-    <header id="header">
-        <nav id="nav">
-            <span id="logo"><a href="../index.html">Lionel.</a></span>
-            <ul id="nav-list">
-                <li><a href="./cv.html">CV</a></li>
-                <li><a href="./projets.html">Projets</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+    <header class="header">
+        <nav class="nav">
+            <span class="nav__logo"><a href="../index.html">Lionel.</a></span>
+            <ul class="nav__list list__inline">
+                <li class="nav__item"><a href="./cv.html">CV</a></li>
+                <li class="nav__item"><a href="./projets.html">Projets</a></li>
+                <li class="nav__item"><a href="./contact.html">Contact</a></li>
             </ul>
+            <i class="fas fa-bars"></i>
         </nav>
     </header>
 
-    <section class="experience"">
-        <h2 class="cv">Curriculum vitae</h2>
-        <h2 class="title">Expérience Professionnelle</h2>
+    <main class="cv">
+        <section class="cv__container">
+            <section class="cv__section cv__experience">
+                <h2 class="cv__title--h2">Curriculum vitae</h2>
+                <h2 class="cv__title--h2">Expérience Professionnelle</h2>
+                
+                <div class="cv__block">
+                    <div class="cv__left">
+                        <h3 class="cv__title--h3">Apprénant en Developpement web et mobile</h3>
+                        <p class="cv__lieu">Kadea Academy - Kinshasa</p>
+                    </div>
+                    <div class="cv__right">
+                        <p class="cv__annee">Janvier 2024 - Présent</p>
+                    </div>
+                </div>
         
-        <div class="block">
-            <div class="left">
-                <h3>Apprénant en Developpement web et mobile</h3>
-                <p>Kadea Academy - Kinshasa</p>
-            </div>
-            <div class="right">
-                <p>Janvier 2024 - Présent</p>
-            </div>
-        </div>
-
-        <p class="text">
-            Formation en développement, conception et programmation des applications web et mobile, de l’analyse du besoin à la mise en ligne, en passant par l’interface et la base de données.
-        </p>
-        <div class="block">
-            <div class="left">
-                <h3>Assistant Téchnicien au Network operations Center</h3>
-                <p>OrionCom - Kinshasa</p>
-            </div>
-            <div class="right">
-                <p>Janvier 2022 - Février 2022</p>
-            </div>
-        </div>
-        <p class="text">
-            Dans le cadre de mon stage Académique, j'ai dû jouer le rôle d'assistant technicien au Network operations Center de l'entreprise et j'ai pu travailler dans les services suivants :
-        </p>
-        <ul class="list">
-            <li>Supervision des performances réseaux</li>
-            <li>Maintenance des réseaux des clients</li>
-        </ul>
-
-    </section>
-
-    <section class="etude"">
-        <h2 class="title">Education</h2>
+                <p class="cv__text">
+                    Formation en développement, conception et programmation des applications web et mobile, de l’analyse du besoin à la mise en ligne, en passant par l’interface et la base de données.
+                </p>
+                <div class="cv__block">
+                    <div class="cv__left">
+                        <h3 class="cv__title--h3">Assistant Téchnicien au Network operations Center</h3>
+                        <p class="cv__lieu">OrionCom - Kinshasa</p>
+                    </div>
+                    <div class="cv__right">
+                        <p class="cv__annee">Janvier 2022 - Février 2022</p>
+                    </div>
+                </div>
+                <p class="cv__text">
+                    Dans le cadre de mon stage Académique, j'ai dû jouer le rôle d'assistant technicien au Network operations Center de l'entreprise et j'ai pu travailler dans les services suivants :
+                </p>
+                <ul class="cv__list">
+                    <li class="cv__item">Supervision des performances réseaux</li>
+                    <li class="cv__item">Maintenance des réseaux des clients</li>
+                </ul>
         
-        <div class="block">
-            <div class="left">
-                <h3>Diplôme de Licence en informatique</h3>
-                <p>UNIKIN - Kinshasa</p>
-            </div>
-            <div class="right">
-                <p>2022 à Présent</p>
-            </div>
-        </div>
-        <div class="block">
-            <div class="left">
-                <h3>Diplôme de graduat en informatique</h3>
-                <p>UNIKIN - Kinshasa</p>
-            </div>
-            <div class="right">
-                <p>2019 à 2022</p>
-            </div>
-        </div>
-
-        <p class="text">
-            Programmation informatique, spécialisation Data Scientist.
-        </p>
-        <p class="text">
-            J'ai effectué 1 stages durant ma formation :
-        </p>
-        <ul class="list">
-            <li>Supervision des performances réseaux</li>
-            <li>Maintenance des réseaux des clients</li>
-        </ul>
-
-        <div class="block">
-            <div class="left">
-                <h3>Diplôme d'état en Biologie-Chimie</h3>
-                <p>Institut Saint Joseph - Kinshasa</p>
-            </div>
-            <div class="right">
-                <p>2019</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="competence"">
-
-        <h3 class="title">Compétences et expertise</h3>
-
-        <div class="competence-container">
-            <ul class="list">
-                <h4>Hard Skills</h4>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>C/C#</li>
-                <li>VB.NET</li>
-            </ul>
-            <ul class="list">
-                <h4>UI/UX DESIGN</h4>
-                <li>CANVA</li>
-                <li>ILLUSTRATOR</li>
-                <li>FIGMA</li>
-                <li>PHOTOSHOP</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <section class="langue"">
-
-        <h3 class="title">Langues</h3>
-        <ul class="list">
-            <li>Français</li>
-            <li>Lingala</li>
-            <li>Tshiluba</li>
-        </ul>
+            </section>
         
-    </section>
+            <section class="cv__section cv__etude">
+                <h2 class="cv__title--h2">Education</h2>
+                
+                <div class="cv__block">
+                    <div class="cv__left">
+                        <h3 class="cv__title--h3">Diplôme de Licence en informatique</h3>
+                        <p class="cv__lieu">UNIKIN - Kinshasa</p>
+                    </div>
+                    <div class="cv__right">
+                        <p class="cv__annee">2022 à Présent</p>
+                    </div>
+                </div>
+                <div class="cv__block">
+                    <div class="cv__left">
+                        <h3 class="cv__title--h3">Diplôme de graduat en informatique</h3>
+                        <p class="cv__lieu">UNIKIN - Kinshasa</p>
+                    </div>
+                    <div class="cv__right">
+                        <p class="cv__annee">2019 à 2022</p>
+                    </div>
+                </div>
+        
+                <p class="cv__text">
+                    Programmation informatique, spécialisation Data Scientist.
+                </p>
+                <p class="cv__text">
+                    J'ai effectué 1 stages durant ma formation :
+                </p>
+                <ul class="cv__list">
+                    <li class="cv__item">Supervision des performances réseaux</li>
+                    <li class="cv__item">Maintenance des réseaux des clients</li>
+                </ul>
+        
+                <div class="cv__block">
+                    <div class="cv__left">
+                        <h3 class="cv__title--h3">Diplôme d'état en Biologie-Chimie</h3>
+                        <p class="cv__lieu">Institut Saint Joseph - Kinshasa</p>
+                    </div>
+                    <div class="cv__right">
+                        <p class="cv__annee">2019</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="cv__section cv__competence">
+        
+                <h2 class="cv__title--h2">Compétences et expertise</h2>
+        
+                <div class="cv__container cv__container--competence">
+                    <ul class="cv__list">
+                        <li class="cv__item cv__item--title">Hard Skills</li>
+                        <li class="cv__item">HTML</li>
+                        <li class="cv__item">CSS</li>
+                        <li class="cv__item">C/C#</li>
+                        <li class="cv__item">VB.NET</li>
+                    </ul>
+                    <ul class="cv__list">
+                        <li class="cv__item cv__item--title">UI/UX DESIGN</l>
+                        <li class="cv__item">CANVA</li>
+                        <li class="cv__item">ILLUSTRATOR</li>
+                        <li class="cv__item">FIGMA</li>
+                        <li class="cv__item">PHOTOSHOP</li>
+                    </ul>
+                </div>
+        
+            </section>
+        
+            <section class="cv__section cv__langue">
+        
+                <h3 class="cv__title--h3">Langues</h3>
+                <ul class="cv__list">
+                    <li class="cv__item">Français</li>
+                    <li class="cv__item">Lingala</li>
+                    <li class="cv__item">Tshiluba</li>
+                </ul>
+                
+            </section>
+        </section>
+    </main>
     
     <footer class="footer">
-        <div class="tel">
-            <h3>Téléphone</h3>
-            <p>+243 828 378 582</p>
+        <div class="footer__container">
+            <div class="footer__contact--tel">
+                <h3 class="footer__title">Téléphone</h3>
+                <p class="footer__text">+243 828 378 582</p>
+            </div>
+            <div class="footer__contact--email">
+                <h3 class="footer__title">Email</h3>
+                <p class="footer__text">lionelmutombo.mtb@gmail.com</p>
+            </div>
+            <div class="footer__contact--medias">
+                <h3 class="footer__title">Suivez-moi</h3>
+                <ul class="medias__list list__inline">
+                    <li class="medias__item">
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li class="medias__item">
+                        <i class="fab fa-github"></i>
+                    </li>
+                    <li class="medias__item">
+                        <i class="fab fa-linkedin-in">
+    
+                    </i></li>
+                    <li class="medias__item">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">&#169; 2024 By Lionel Mutombo</p>
         </div>
-        <div class="email">
-            <h3>Email</h3>
-            <p>lionelmutombo.mtb@gmail.com</p>
-        </div>
-        <div class="medias">
-            <h3>Suivez-moi</h3>
-            <ul class="medias-icons">
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-github"></i></li>
-                <li><i class="fab fa-linkedin-in"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-            </ul>
-        </div>
-        <p class="copyright">&#169; 2024 By Lionel Mutombo</p>
     </footer>
 
 </body>
