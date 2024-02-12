@@ -48,8 +48,44 @@ a{
     font-size: 1.5rem;
     font-weight: bold;
 }
-.fa-bars{
-    display: none;
+.clickOn,
+.clickOff,
+.nav__checkbox{
+    /* display: none; */
+}
+.clickOn{
+    width: 30px;
+    height: 30px;
+    background: #dd1f1f;
+    position: relative;
+}
+.nav__menu--bar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.5rem;
+    height: 2.3px;
+    background: #000;
+    /* display: none; */
+}
+.nav__menu--bar::before{
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 2.3px;
+    top: -.4rem;
+    background: #000;
+    /* display: none; */
+}
+.nav__menu--bar::after{
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 2.3px;
+    top: .4rem;
+    background: #000;
+    /* display: none; */
 }
 .nav__item{
     font-size: 1rem;
@@ -146,13 +182,42 @@ a{
 }
 
 /* **************Responsive************** */
+@media screen and (min-width:1650px){
+    .nav{
+        width: 60%;
+    }
+    .home{
+        width: 60%;
+    }
+    .home__profil{
+        width: 400px;
+        height: 400px;
+    }
+    .home__link{
+        width: 100px;
+        height: 100px;
+    }
+    .list__inline{
+        display: flex;
+        gap: 35px;
+    }
+    .footer__container{
+        width: 60%;
+    }
+}
 
 @media screen and (max-width:850px){
     .nav__list{
         display: none;
     }
-    .fa-bars{
-        display: flex;
+    input[type="checkbox"]:checked ~ .clickOn{
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .clickOff{
+        display: block;
+    }
+    .clickOn{
+        display: block;
     }
     .home{
         flex-direction: column;

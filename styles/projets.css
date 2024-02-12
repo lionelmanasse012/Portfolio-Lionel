@@ -32,6 +32,11 @@
 }
 
 /* *******************Responsive******************* */
+@media screen and (min-width:1650px){
+    .project__container{
+        width: 60%;
+    }
+}
 @media screen and (max-width:650px){
     
     .projet__left{

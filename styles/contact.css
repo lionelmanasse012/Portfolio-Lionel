@@ -62,7 +62,21 @@
 }
 
 /* **************Responsive************** */
-
+@media screen and (min-width:1650px){
+    .contact__container{
+        width: 60%;
+    }
+    .contact__right{
+        width: 700px;
+    }
+    .contact__input--text,
+    .contact__textarea{
+        padding: 10px;
+    }
+    .contact__textarea{
+        height: 200px;
+    }
+}
 @media screen and (max-width:850px){
     .contact{
         height: auto;
