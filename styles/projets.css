@@ -32,6 +32,11 @@
 }
 
 /* *******************Responsive******************* */
+@media screen and (min-width:1650px){
+    .project__container{
+        width: 60%;
+    }
+}
 @media screen and (max-width:650px){
     
     .projet__left{
@@ -42,10 +47,7 @@
         margin: 0 auto;
     }
     .projet__items{
-        flex-direction: column;
-    }
-    .projet__items{
-        border-bottom: 1px solid var(--other__border--color);
+        display: grid;
     }
     .projet__items:last-child{
         border-bottom: none;
