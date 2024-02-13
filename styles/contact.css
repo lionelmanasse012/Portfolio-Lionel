@@ -80,14 +80,17 @@
 @media screen and (max-width:850px){
     .contact{
         height: auto;
-        margin: 50px 0;
+        margin: 100px 0 150px;
     }
     .contact__form{
-        display: block;
+        display: grid;
         margin: 30px 0 0;
     }
     .contact__right{
         width: auto;
+    }
+    .contact__container{
+        flex-direction: column;
     }
     .contact__input--text,
     .contact__textarea{

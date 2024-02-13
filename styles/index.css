@@ -36,9 +36,6 @@ a {
 
 /* *****************Nav bar***************** */
 .header {
-  /* position: fixed;
-    background: #fff;
-    width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,87 +51,39 @@ a {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.clickOn,
-.nav__checkbox,
-.nav__list--block {
-  display: none;
-}
-.clickOn {
-  position: relative;
-  width: 30px;
-  height: 30px;
-}
-.nav__menu--bar {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1.5rem;
-  height: 2.3px;
-  background: #000;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-.nav__menu--bar::before {
-  content: "";
-  position: absolute;
-  width: 1.5rem;
-  height: 2.3px;
-  top: -0.4rem;
-  background: #000;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-.nav__menu--bar::after {
-  content: "";
-  position: absolute;
-  width: 1.5rem;
-  height: 2.3px;
-  top: 0.4rem;
-  background: #000;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-.nav__hamburger {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 7%;
-  right: 10%;
-  width: 0;
-  height: 0;
-  background: #0000008e;
-  border-radius: 10px 0 10px 10px;
-  transition: all .5s ease;
-}
-.nav__list--block {
-    text-align: center;
-}
-.nav__list--block .nav__item {
-  padding: 10px;
-}
-input[type="checkbox"]:checked ~ .nav__hamburger {
-  opacity: 1;
-  width: 80%;
-  height: 20vh;
-}
-input[type="checkbox"]:checked + .clickOn .nav__menu--bar {
-  background: none;
-}
-input[type="checkbox"]:checked + .clickOn .nav__menu--bar::before {
-  top: 0;
-  transform: rotate(-135deg);
-}
-input[type="checkbox"]:checked + .clickOn .nav__menu--bar::after {
-  top: 0;
-  transform: rotate(135deg);
-}
-input[type="checkbox"]:checked ~ .nav__hamburger .nav__list--block {
-  display: block;
+.nav__list {
+  gap: 45px;
 }
 .nav__item {
   font-size: 1rem;
+  position: relative;
+}
+.nav__item:first-child::after{
+  content: "";
+  position: absolute;
+  background: #000;
+  right: -100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: .1rem;
+  height: 1.5rem;
+}
+.nav__item:nth-child(2)::after{
+  content: "";
+  position: absolute;
+  background: #000;
+  right: -42%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: .1rem;
+  height: 1.5rem;
+}
+.nav__item--link{
+  font-weight: normal;
+  transition: all .5s ease;
+}
+.nav__item--link:hover{
+  color: #2caac0;
 }
 
 /* *****************Home***************** */
@@ -253,17 +202,12 @@ input[type="checkbox"]:checked ~ .nav__hamburger .nav__list--block {
 }
 
 @media screen and (max-width: 850px) {
-  .nav__list {
-    display: none;
-  }
-  .clickOn {
-    display: block;
-  }
   .home {
     flex-direction: column;
     gap: 20px;
     height: auto;
     padding: 60px 0 65px;
+    text-align: center;
   }
   .home__profil {
     width: 30vh;
@@ -272,6 +216,9 @@ input[type="checkbox"]:checked ~ .nav__hamburger .nav__list--block {
   .home__about {
     line-height: 25px;
     font-size: 0.99rem;
+  }
+  .home__list{
+    justify-content: center;
   }
   .home__description {
     width: 100%;
@@ -297,5 +244,24 @@ input[type="checkbox"]:checked ~ .nav__hamburger .nav__list--block {
   }
   .medias__list {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav {
+    display: block;
+    text-align: center;
+  }
+  .nav__logo{
+    display: block;
+    padding: 0 0 20px;
+  }
+  .nav__list{
+    justify-content: center;
+  }
+}
+@media screen and (max-height: 900px) {
+  .nav {
+    margin-top: 30px;
   }
 }
